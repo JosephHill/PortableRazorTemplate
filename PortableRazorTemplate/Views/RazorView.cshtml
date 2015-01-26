@@ -1,0 +1,27 @@
+﻿@inherits PortableRazor.ViewBase
+@model PortableRazorTemplate.Models.Model1
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <script type="text/javascript">
+        // This javascript method is called from C#
+        function SetLabelText(text) {
+            var elm = document.getElementById('label');
+            elm.innerHTML = text;
+        }
+    </script>
+</head>
+<body>
+    @using (@Html.BeginForm("UpdateLabel", "Controller1", new { val = @Model.Value })) {
+
+        <h4 id="label">@Model.Text</h4>
+
+        @Html.TextBox("val", @Model.Value)
+
+        <input type="submit" value="Update Label" />
+    }
+</body>
+</html>	

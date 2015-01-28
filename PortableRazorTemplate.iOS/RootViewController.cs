@@ -2,8 +2,6 @@ using System;
 using System.Drawing;
 using Foundation;
 using UIKit;
-using PortableRazorTemplate.iOS.Views;
-using PortableRazorTemplate.iOS.Models;
 
 namespace PortableRazorTemplate.iOS
 {

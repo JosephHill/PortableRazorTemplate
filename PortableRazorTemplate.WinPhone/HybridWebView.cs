@@ -40,6 +40,8 @@ namespace PortableRazorTemplate.WinPhone
         }
 
 		public HybridWebView(WebBrowser uiWebView) {
+			//IE on Windows Phone will only post data to URLs that begin with http://
+			PortableRazor.ViewBase.UrlScheme = "http://portablerazor.madeupdomain";
             webView = uiWebView;
 
             webView.IsScriptEnabled = true;

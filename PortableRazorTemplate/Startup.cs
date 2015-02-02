@@ -22,7 +22,6 @@ namespace PortableRazorTemplate
 		/// <param name="webView"></param>
 		/// <returns></returns>
 		public static async Task Init (IHybridWebView webView) {
-			webView.BasePath = PortablePath.Combine(FileSystem.Current.LocalStorage.Path, "www");
 
 			// Initialize static content (styles, images, scripts, database files, etc.) here
 			if (await FileSystem.Current.GetFileFromPathAsync(PortablePath.Combine(webView.BasePath, "style.css")) == null) {

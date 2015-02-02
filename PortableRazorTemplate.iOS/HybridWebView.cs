@@ -1,8 +1,9 @@
 using System;
+using System.IO;
 using Foundation;
 using UIKit;
-using PortableRazor;
 using PCLStorage;
+using PortableRazor;
 
 namespace PortableRazorTemplate.iOS
 {
@@ -10,21 +11,15 @@ namespace PortableRazorTemplate.iOS
 		UIWebView webView;
 
 		NSUrl baseUrl;
-		string basePath;
 
-		public string BasePath {
-			get {
-				return basePath;
-			}
-			set {
-				basePath = value;
-				baseUrl = new NSUrl (basePath, true);
-			}
-		}
+		public string BasePath { get; private set; }
 
 		public HybridWebView(UIWebView uiWebView) {
 			webView = uiWebView;
 			webView.ShouldStartLoad += HandleShouldStartLoad;
+
+			BasePath = PortablePath.Combine(FileSystem.Current.LocalStorage.Path, "www");
+			baseUrl = new NSUrl(BasePath, true);
 		}
 
 		bool HandleShouldStartLoad (UIWebView webView, NSUrlRequest request, UIWebViewNavigationType navigationType) {

@@ -7,8 +7,7 @@ using Microsoft.Phone.Controls;
 using PCLStorage;
 using PortableRazor;
 
-namespace PortableRazorTemplate.WinPhone 
-{
+namespace PortableRazorTemplate.WinPhone {
 	class HybridWebView : IHybridWebView {
 		WebBrowser webView;
 		string filePath;
@@ -19,7 +18,7 @@ namespace PortableRazorTemplate.WinPhone
 
 		public HybridWebView(WebBrowser uiWebView) {
 			//IE on Windows Phone will only post data to URLs that begin with http://
-			PortableRazor.ViewBase.UrlScheme = "http://portablerazor.madeupdomain/";
+			ViewBase.UrlScheme = "http://portablerazor.madeupdomain/";
             webView = uiWebView;
 
             webView.IsScriptEnabled = true;
@@ -34,11 +33,12 @@ namespace PortableRazorTemplate.WinPhone
 		#region IHybridWebView implementation
 
 		public async void LoadHtmlString(string html) {
-			var file = await FileSystem.Current.LocalStorage.CreateFileAsync(
-				filePath,
+
+            var file = await FileSystem.Current.LocalStorage.CreateFileAsync(
+                filePath,
 				CreationCollisionOption.ReplaceExisting);
 
-			await file.WriteAllTextAsync(html);
+            await file.WriteAllTextAsync(html);
 
 			webView.Navigate(baseUri);
 		}

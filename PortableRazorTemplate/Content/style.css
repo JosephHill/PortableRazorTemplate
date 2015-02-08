@@ -5,7 +5,8 @@
    accessible from a path starting at the root of your hybrid application.  */
 
 input {
- 	width:100%;
+ 	width: 100%;
+    box-sizing: border-box;
 }
 
 input[type=submit] {
@@ -15,4 +16,9 @@ input[type=submit] {
     border-radius: 5px;
     border: 0;
     padding: 3px;
+    -webkit-appearance: none;
+}
+
+#MissingStyleWarning {
+	display: none;
 }

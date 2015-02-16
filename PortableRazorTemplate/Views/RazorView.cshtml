@@ -19,9 +19,20 @@
 
         <h4 id="label">@Model.Text</h4>
 
-        @Html.TextBox("val", @Model.Value)
+        @Html.TextBox("val", @Model.Value) 
 
         <input type="submit" value="Update Label" />
     }
+
+    <br/><span id="CustomToolWarning" style="color:orange">If you are seeing this text, you have not yet run the <b>RazorTemplatePreprocessor CustomTool</b> on this view.<br/>  
+    In the property pane for <b>Views/RazorView.cshmtl</b>, set <b>CustomTool</b> to <b>RazorTemplatePreprocessor</b>; otherwise,
+    the class generated for for this view will not reflect your changes to <b>RazorView.cshtml</b>.</span><br/>
+
+    <br/><span id="MissingStyleWarning" style="color:red">
+    If you are seeing this text, <b>style.css</b> has not been copied into webroot on your device.<br/>
+    In the property pane for <b>Content/style.css</b>, set <b>BuildAction</b> to <b>EmbeddedResource</b> and
+    uncomment the "<i>Initialize static content...</i>" lines in the <b>Init(IHybridWebView)</b> method in <b>Startup.cs</b>.
+    </span>
+
 </body>
 </html>	

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>PortableRazor.StarterPack</id>
+    <version>1.3.0-pre4</version>
+    <title>PortableRazor Starter Pack for Xamarin and Windows</title>
+    <authors>Joseph Hill</authors>
+    <owners>Joseph Hill</owners>
+    <licenseUrl>https://github.com/JosephHill/PortableRazorTemplate/blob/master/License</licenseUrl>
+    <projectUrl>https://github.com/JosephHill/PortableRazorTemplate</projectUrl>
+    <iconUrl>https://files.xamarin.com/~joseph/PortableRazor_128.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>
+      A template to simplify integration of the PortableRazor Plugin for Xamarin and Windows in your app.
+    </description>
+    <summary>
+      This NuGet is primarily a meta-NuGet referencing the NuGets most commonly used with PortableRazor:
+      * PCLStorage
+      * PortableRazor
+      * EmbeddedResource Plugin for Xamarin and Windows
+
+      It also provides an implementation of PortableRazor.IHybridWebView in source form for iOS, Android, and Windows Phone projects.
+
+      When referenced from a PCL project, PortableRazor Starter Pack provides a simple and Model, View, and Controller, as well as an example Starter class to demonstrate PortableRazor app initialization.
+    </summary>
+    <releaseNotes>Pre-release</releaseNotes>
+    <copyright>Copyright 2015, Xamarin Inc.</copyright>
+    <tags>xamarin, pcl, xam.pcl, windows phone, winphone, wp8, winrt, android, xamarin.forms, ios</tags>
+    <dependencies>
+      <dependency id="PCLStorage" version="1.0.2" />
+      <dependency id="PortableRazor" version="1.3.0" />
+      <dependency id="Xam.Plugin.EmbeddedResource" version="1.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <!--Core-->
+    <file src="src/core/Startup.cs.pp" target="content\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Startup.cs.pp" />
+    <file src="src/core/Model1.cs.pp" target="content\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Models\Model1.cs.pp" />
+    <file src="src/core/RazorView.cs.pp" target="content\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Views\RazorView.cs.pp" />
+    <file src="src/core/RazorView.cshtml.pp" target="content\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Views\RazorView.cshtml.pp" />
+    <file src="src/core/Controller1.cs.pp" target="content\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Controllers\Controller1.cs.pp" />
+    <file src="src/core/style.css" target="content\portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Content\style.css" />
+    <!--iOS Unified-->
+    <file src="src/Xamarin.iOS10/HybridWebView.cs.pp" target="content\Xamarin.iOS10\HybridWebView.cs.pp" />
+    <file src="src/Xamarin.iOS10/MainStoryboard_iPad.storyboard.pp" target="content\Xamarin.iOS10\MainStoryboard_iPad.storyboard.pp" />
+    <file src="src/Xamarin.iOS10/MainStoryboard_iPhone.storyboard.pp" target="content\Xamarin.iOS10\MainStoryboard_iPhone.storyboard.pp" />
+    <file src="src/Xamarin.iOS10/RootViewController.cs.pp" target="content\Xamarin.iOS10\RootViewController.cs.pp" />
+    <file src="src/Xamarin.iOS10/RootViewController.designer.cs.pp" target="content\Xamarin.iOS10\RootViewController.designer.cs.pp" />
+    <!--iOS Classic-->
+    <file src="src/MonoTouch10/HybridWebView.cs.pp" target="content\MonoTouch10\HybridWebView.cs.pp" />
+    <file src="src/MonoTouch10/MainStoryboard_iPad.storyboard.pp" target="content\MonoTouch10\MainStoryboard_iPad.storyboard.pp" />
+    <file src="src/MonoTouch10/MainStoryboard_iPhone.storyboard.pp" target="content\MonoTouch10\MainStoryboard_iPhone.storyboard.pp" />
+    <file src="src/MonoTouch10/RootViewController.cs.pp" target="content\MonoTouch10\RootViewController.cs.pp" />
+    <file src="src/MonoTouch10/RootViewController.designer.cs.pp" target="content\MonoTouch10\RootViewController.designer.cs.pp" />
+    <!--Android-->
+    <file src="src/MonoAndroid10/HybridWebView.cs.pp" target="content\MonoAndroid10\HybridWebView.cs.pp" />
+    <file src="src/MonoAndroid10/MainActivity.cs.pp" target="content\MonoAndroid10\MainActivity.cs.pp" />
+    <file src="src/MonoAndroid10/Resources/layout/Main.axml.pp" target="content\MonoAndroid10\Resources\layout\Main.axml.pp" />
+    <!--Windows Phone-->
+    <file src="src/wp8/HybridWebView.cs.pp" target="content\wp8\HybridWebView.cs.pp" />
+    <file src="src/wp8/MainPage.xaml.pp" target="content\wp8\MainPage.xaml.pp" />
+    <file src="src/wp8/MainPage.xaml.cs.pp" target="content\wp8\MainPage.xaml.cs.pp" />
+  </files>
+</package>

@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>PortableRazor.StarterPack</id>
-    <version>1.3.0-pre4</version>
+    <version>1.3.0-pre5</version>
     <title>PortableRazor Starter Pack for Xamarin and Windows</title>
     <authors>Joseph Hill</authors>
     <owners>Joseph Hill</owners>
@@ -21,7 +21,7 @@
 
       It also provides an implementation of PortableRazor.IHybridWebView in source form for iOS, Android, and Windows Phone projects.
 
-      When referenced from a PCL project, PortableRazor Starter Pack provides a simple and Model, View, and Controller, as well as an example Starter class to demonstrate PortableRazor app initialization.
+      When referenced from a PCL project, PortableRazor Starter Pack provides a simple Model, View, and Controller, as well as an example Starter class to demonstrate PortableRazor app initialization.
     </summary>
     <releaseNotes>Pre-release</releaseNotes>
     <copyright>Copyright 2015, Xamarin Inc.</copyright>
@@ -44,18 +44,19 @@
     <file src="src/Xamarin.iOS10/HybridWebView.cs.pp" target="content\Xamarin.iOS10\HybridWebView.cs.pp" />
     <file src="src/Xamarin.iOS10/MainStoryboard_iPad.storyboard.pp" target="content\Xamarin.iOS10\MainStoryboard_iPad.storyboard.pp" />
     <file src="src/Xamarin.iOS10/MainStoryboard_iPhone.storyboard.pp" target="content\Xamarin.iOS10\MainStoryboard_iPhone.storyboard.pp" />
-    <file src="src/Xamarin.iOS10/RootViewController.cs.pp" target="content\Xamarin.iOS10\RootViewController.cs.pp" />
-    <file src="src/Xamarin.iOS10/RootViewController.designer.cs.pp" target="content\Xamarin.iOS10\RootViewController.designer.cs.pp" />
+    <file src="src/Xamarin.iOS10/RazorViewController.cs.pp" target="content\Xamarin.iOS10\RazorViewController.cs.pp" />
+    <file src="src/Xamarin.iOS10/RazorViewController.designer.cs.pp" target="content\Xamarin.iOS10\RazorViewController.designer.cs.pp" />
     <!--iOS Classic-->
     <file src="src/MonoTouch10/HybridWebView.cs.pp" target="content\MonoTouch10\HybridWebView.cs.pp" />
     <file src="src/MonoTouch10/MainStoryboard_iPad.storyboard.pp" target="content\MonoTouch10\MainStoryboard_iPad.storyboard.pp" />
     <file src="src/MonoTouch10/MainStoryboard_iPhone.storyboard.pp" target="content\MonoTouch10\MainStoryboard_iPhone.storyboard.pp" />
-    <file src="src/MonoTouch10/RootViewController.cs.pp" target="content\MonoTouch10\RootViewController.cs.pp" />
-    <file src="src/MonoTouch10/RootViewController.designer.cs.pp" target="content\MonoTouch10\RootViewController.designer.cs.pp" />
+    <file src="src/MonoTouch10/RazorViewController.cs.pp" target="content\MonoTouch10\RazorViewController.cs.pp" />
+    <file src="src/MonoTouch10/RazorViewController.designer.cs.pp" target="content\MonoTouch10\RazorViewController.designer.cs.pp" />
     <!--Android-->
     <file src="src/MonoAndroid10/HybridWebView.cs.pp" target="content\MonoAndroid10\HybridWebView.cs.pp" />
     <file src="src/MonoAndroid10/MainActivity.cs.pp" target="content\MonoAndroid10\MainActivity.cs.pp" />
     <file src="src/MonoAndroid10/Resources/layout/Main.axml.pp" target="content\MonoAndroid10\Resources\layout\Main.axml.pp" />
+    <file src="src/MonoAndroid10/Properties/AndroidManifest.xml.pp" target="content\MonoAndroid10\Properties\AndroidManifest.xml.pp" />
     <!--Windows Phone-->
     <file src="src/wp8/HybridWebView.cs.pp" target="content\wp8\HybridWebView.cs.pp" />
     <file src="src/wp8/MainPage.xaml.pp" target="content\wp8\MainPage.xaml.pp" />

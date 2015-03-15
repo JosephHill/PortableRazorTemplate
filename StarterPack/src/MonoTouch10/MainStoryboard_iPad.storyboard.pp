@@ -7,7 +7,7 @@
     <!--Hybrid View Controller-->
     <scene sceneID="tne-QT-ifu">
       <objects>
-        <viewController id="BYZ-38-t0r" customClass="RootViewController" sceneMemberID="viewController">
+        <viewController id="BYZ-38-t0r" customClass="RazorViewController" sceneMemberID="viewController">
           <layoutGuides>
             <viewControllerLayoutGuide type="top" id="gfO-N0-H0g"/>
             <viewControllerLayoutGuide type="bottom" id="ZvW-Oy-9aT"/>

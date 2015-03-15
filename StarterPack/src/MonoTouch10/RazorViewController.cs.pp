@@ -5,13 +5,13 @@ using MonoTouch.UIKit;
 
 namespace $rootnamespace$
 {
-	public partial class RootViewController : UIViewController
+	public partial class RazorViewController : UIViewController
 	{
 		static bool UserInterfaceIdiomIsPhone {
 			get { return UIDevice.CurrentDevice.UserInterfaceIdiom == UIUserInterfaceIdiom.Phone; }
 		}
 
-		public RootViewController (IntPtr handle)
+		public RazorViewController (IntPtr handle)
 			: base(handle) {
 		}
 
